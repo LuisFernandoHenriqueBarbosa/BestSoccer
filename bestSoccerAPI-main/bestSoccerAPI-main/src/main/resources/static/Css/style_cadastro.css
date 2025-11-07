@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.navbar {
+    background-color: #11C770;
+    padding: 0.5rem 1rem;
+}
+
+.back-top-link {
+    font-size: 1.25rem;
+    color: #FFF;
+    transition: color 0.2s ease-in-out;
+}
+
