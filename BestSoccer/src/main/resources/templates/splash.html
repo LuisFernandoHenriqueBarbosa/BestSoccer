@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestSoccer</title>
+    <link rel="stylesheet" th:href="@{/Css/style_splash.css}">
+</head>
+    <body>
+        <div class="splash-container">
+            <div class="logo">
+                <img src="/image/logoBestSoccerSemFundo.png" alt="Logo">
+            </div>
+            <div class="loader"></div>
+        </div>
+        <script>
+            setTimeout(function() {
+                window.location.href = "/index";
+            }, 3000);
+        </script>
+    </body>
+    </html>

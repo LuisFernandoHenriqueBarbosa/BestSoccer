@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #FFF;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.btn-login {
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 2px 30px;
+    font-size: 28px;
+    box-shadow: 2px 2px 5px #00000077;
+    margin-top: 5px;
+    text-shadow: 2px 2px 3px #00000094;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    color: #11C770;
+    background-color: #ffffff;
+    border: 2px solid #00000042;
+    box-shadow: 2px 2px 5px #00000077;
+    text-shadow: 0px 0px 0px;
+    transform: translateY(-2px);
+}
+#carouselExample img{
+    width: 100%;
+    max-height: 970px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 18rem;
+    margin: 10px;
+}
+
+#carouselJogadores .carousel-control-prev,
+#carouselJogadores .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #11C770; 
+    border-radius: 50%; 
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #0fa857;
+    transform: scale(1.1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 1;
+}
+
+#carouselJogos .carousel-control-prev,
+#carouselJogos .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #ffffff;
+    border: 2px solid #0000008a;
+}
+
+.user-name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    text-shadow: 2px 2px 3px #00000094;
+}
+
+#userDropdown{
+    outline: none;
+}
+
+#userDropdown:focus{
+    outline: none;
+    border: 2px solid #ffffff;
+}
+
+#userDropdown:hover{
+    outline: none;
+    border: 2px solid #ffffff;
+}
+
+
+
+
+
